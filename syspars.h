@@ -111,7 +111,7 @@ struct Bonding {
 };
 
 struct TearOff {
-    int contact_method;
+    int hop_contact_method;
     double tail_length;
     double tear_off_distance;
     double tear_force;

@@ -143,6 +143,22 @@
                     }
                 },
                 "bonding_mode":    {
+                    "bond_point_angle_offset":    {
+                        "data_type":    "double",
+                        "name":    "bond point angle offset",
+                        "value":    0.0,
+                        "minimum":    -90.0,
+                        "maximum":    90.0,
+                        "range_min":    -90.0,
+                        "range_max":    90.0,
+                        "single_step":    0.001,
+                        "decimals":    3,
+                        "unit":    "degree",
+                        "access_level":    "process",
+                        "display_mode":    "show",
+                        "color":    "black",
+                        "tool_tip":    "bond point angle offset from wire angle"
+                    },
                     "trigger_distance":    {
                         "data_type":    "double",
                         "name":    "trigger distance",
@@ -396,6 +412,22 @@
                         "display_mode":    "show",
                         "color":    "black",
                         "tool_tip":    "deformation down limit"
+                    },
+                    "break_detect_threshold":    {
+                        "data_type":    "double",
+                        "name":    "break detect threshold",
+                        "value":    5,
+                        "minimum":    0,
+                        "maximum":    30,
+                        "range_min":    0,
+                        "range_max":    30,
+                        "single_step":    0.1,
+                        "decimals":    1,
+                        "unit":    "mm",
+                        "access_level":    "process",
+                        "display_mode":    "show",
+                        "color":    "black",
+                        "tool_tip":    "break detect threshold"
                     }
                 }
             }],
@@ -498,6 +530,17 @@
                 }
             }],
         "tear_off":    [{
+                "hop_contact_method":    {
+                    "data_type":    "enum",
+                    "name":    "hop contact method",
+                    "value":    "conatct search",
+                    "enum_item_list":    "contact search, fix height",
+                    "enum_item_access_level_list":    "operator,operator",
+                    "unit":    "nounit",
+                    "access_level":    "operator",
+                    "display_mode":    "show",
+                    "color":    "black"
+                },
                 "tail_length":    {
                     "data_type":    "double",
                     "name":    "tail length",
@@ -721,6 +764,22 @@
                     "display_mode":    "show",
                     "color":    "black",
                     "tool_tip":    "hop velocity"
+                },
+                "hop_low_limit":    {
+                    "data_type":    "double",
+                    "name":    "hop low limit",
+                    "value":    0.2,
+                    "minimum":    0.0,
+                    "maximum":    2.0,
+                    "range_min":    0.0,
+                    "range_max":    2.0,
+                    "single_step":    0.001,
+                    "decimals":    3,
+                    "unit":    "mm",
+                    "access_level":    "process",
+                    "display_mode":    "show",
+                    "color":    "black",
+                    "tool_tip":    "hoop low limit"
                 }
             }]
     }
