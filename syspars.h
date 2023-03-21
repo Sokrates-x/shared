@@ -143,6 +143,7 @@ struct LoopProfile {
     double twist_height;
     double step_forward_angle;
     double descent_delay;
+    double touch_twist_heigh;
 };
 
 struct QualityCheck {

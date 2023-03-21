@@ -527,6 +527,22 @@
                     "display_mode":    "show",
                     "color":    "black",
                     "tool_tip":    "decent delay"
+                },
+                "touch_twist_height":    {
+                    "data_type":    "double",
+                    "name":    "touch twist height",
+                    "value":    1.2,
+                    "minimum":    0,
+                    "maximum":    50,
+                    "range_min":    0,
+                    "range_max":    50,
+                    "single_step":    0.001,
+                    "decimals":    3,
+                    "unit":    "mm",
+                    "access_level":    "process",
+                    "display_mode":    "show",
+                    "color":    "black",
+                    "tool_tip":    "touch twist height"
                 }
             }],
         "tear_off":    [{
