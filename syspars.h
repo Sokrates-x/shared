@@ -69,18 +69,18 @@ struct RunSpeed {
     double slow_move_speed;
 };
 
-struct BTO {
-    double x;
-    double y;
-    double a;
-    double r;
+struct BtoPars {
+    double bto_x;
+    double bto_y;
+    double bto_a;
+    double bto_r;
 };
 
 struct MachineSetupParams {
     int bond_head_type;
     struct BondControlSetup bond_control_setup;
     struct RunSpeed run_speed;
-    struct BTO bto;
+    struct BtoPars bto;
 };
 
 //======================================Bonding Params===============================================//
